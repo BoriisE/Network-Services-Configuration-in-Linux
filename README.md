@@ -13,11 +13,11 @@ In this project, I deployed and configured a DNS infrastructure on Linux consist
 - Installed and configured Bind9
 - Created a DNS zone:
   ```
-  <>.local
+  <user_name>.local
   ```
 - Configured a reverse lookup zone for the VM subnet
 - Added DNS records:
-  - A record: `www.<>.local` → web server IP
+  - A record: `www.<user_name>.local` → web server IP
   - PTR record: reverse DNS for the web server IP
 - Started a web server on the second VM:
   ```bash
